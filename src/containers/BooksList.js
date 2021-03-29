@@ -2,7 +2,13 @@ import React from 'react';
 
 const BooksList = () => (
   <div>
-    <h1>Book List</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>title</th>
+        <th>category</th>
+      </tr>
+    </table>
   </div>
 );
 
