@@ -1,4 +1,4 @@
-const BookForm = () => {
+const BooksForm = () => {
 
   return (
     <div>
@@ -13,4 +13,4 @@ const BookForm = () => {
   )
 }
 
-export default BookForm;
+export default BooksForm;
