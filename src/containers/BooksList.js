@@ -3,11 +3,13 @@ import React from 'react';
 const BooksList = () => (
   <div>
     <table>
-      <tr>
-        <th>ID</th>
-        <th>title</th>
-        <th>category</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>title</th>
+          <th>category</th>
+        </tr>
+      </thead>
     </table>
   </div>
 );

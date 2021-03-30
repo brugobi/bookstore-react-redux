@@ -1,25 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book }) => {
-  const {
-    id,
-    title,
-    category,
-  } = book;
-
-  return (
-    <div>
-      <table>
+const Book = ({ book: { id, title, category } }) => (
+  <div>
+    <table>
+      <tbody>
         <tr>
           <td>{id}</td>
           <td>{title}</td>
           <td>{category}</td>
         </tr>
-      </table>
-    </div>
-  );
-};
+      </tbody>
+    </table>
+  </div>
+);
 
 Book.propTypes = {
   book: PropTypes.shape({
