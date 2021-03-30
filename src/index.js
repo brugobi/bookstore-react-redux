@@ -1,49 +1,58 @@
 import React from 'react';
+import { createStore } from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
+import booksReducer from './redux/reducers/books';
+
+const id = Math.floor(Math.random() * 1000);
 
 const feedUpBooks = [
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'Batman: The Dark Knight',
     category: 'Action',
   },
   {
-    id: Math.floor(Math.random() * 1000),
-    title: 'Hidden Figures - The American Dream and the Untold Story of the Black Women Mathematicians Who Helped Win the Space Race',
+    id,
+    title: `Hidden Figures - The American Dream and the Untold Story of the Black 
+            Women Mathematicians Who Helped Win the Space Race`,
     category: 'Biography',
   },
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'The Diary of a Young Girl',
     category: 'History',
   },
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'The Shining',
     category: 'Horror',
   },
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'The Little Prince',
     category: 'Kids',
   },
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'City of Stars: A New Yorkers Guide to the Cosmos',
     category: 'Learning',
   },
   {
-    id: Math.floor(Math.random() * 1000),
+    id,
     title: 'Avatar',
     category: 'Sci-Fi',
   },
 ];
 
+const store = createStore(booksReducer, [feedUpBooks]);
+
 ReactDOM.render(
-  <Provider store={feedUpBooks}>
-    <App />
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root'),
 );
