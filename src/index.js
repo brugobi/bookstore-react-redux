@@ -5,48 +5,50 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import booksReducer from './redux/reducers/books';
 
-const id = Math.floor(Math.random() * 1000);
+// const id = Math.floor(Math.random() * 1000);
 
-const feedUpBooks = [
-  {
-    id,
-    title: 'Batman: The Dark Knight',
-    category: 'Action',
-  },
-  {
-    id,
-    title: `Hidden Figures - The American Dream and the Untold Story of the Black 
+const initialstate = {
+  books: [
+    {
+      id: Math.floor(Math.random() * 50),
+      title: 'Batman: The Dark Knight',
+      category: 'Action',
+    },
+    {
+      id: Math.floor(Math.random() * 50),
+      title: `Hidden Figures - The American Dream and the Untold Story of the Black 
             Women Mathematicians Who Helped Win the Space Race`,
-    category: 'Biography',
-  },
-  {
-    id,
-    title: 'The Diary of a Young Girl',
-    category: 'History',
-  },
-  {
-    id,
-    title: 'The Shining',
-    category: 'Horror',
-  },
-  {
-    id,
-    title: 'The Little Prince',
-    category: 'Kids',
-  },
-  {
-    id,
-    title: 'City of Stars: A New Yorkers Guide to the Cosmos',
-    category: 'Learning',
-  },
-  {
-    id,
-    title: 'Avatar',
-    category: 'Sci-Fi',
-  },
-];
+      category: 'Biography',
+    },
+    {
+      id: Math.floor(Math.random() * 500),
+      title: 'The Diary of a Young Girl',
+      category: 'History',
+    },
+    {
+      id: Math.floor(Math.random() * 500),
+      title: 'The Shining',
+      category: 'Horror',
+    },
+    {
+      id: Math.floor(Math.random() * 500),
+      title: 'The Little Prince',
+      category: 'Kids',
+    },
+    {
+      id: Math.floor(Math.random() * 500),
+      title: 'City of Stars: A New Yorkers Guide to the Cosmos',
+      category: 'Learning',
+    },
+    {
+      id: Math.floor(Math.random() * 500),
+      title: 'Avatar',
+      category: 'Sci-Fi',
+    },
+  ],
+};
 
-const store = createStore(booksReducer, [feedUpBooks]);
+const store = createStore(booksReducer, initialstate);
 
 ReactDOM.render(
   <React.StrictMode>
