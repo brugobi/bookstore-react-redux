@@ -1,4 +1,4 @@
-# Calculator
+# Book Store
  
 > React Project where I develop a Book Store using Class Components, Prop-Types and deployment to heroku.
 
