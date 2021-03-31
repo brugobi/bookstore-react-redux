@@ -5,13 +5,11 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook } from '../redux/actions/index';
 
-const BooksList = ({
-  books,
-  removeBook,
-}) => {
+const BooksList = ({ books, removeBook }) => {
   const handleRemoveBook = (book) => {
     removeBook(book);
   };
+
   return (
     <div>
       <table>
