@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../redux/actions/index';
 
-const BooksForm = () => {
+const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   const [title, setTitle] = useState('');
@@ -21,7 +21,6 @@ const BooksForm = () => {
     e.preventDefault();
     createBook({ id: Math.floor(Math.random() * 500), title, category });
     setTitle('');
-    setCategory('');
   };
 
   return (
@@ -29,9 +28,10 @@ const BooksForm = () => {
       <form>
         <label htmlFor="title">
           Title:
+          <input type="text" name="title" id="title" value={title} onChange={handleChange} />
         </label>
-        <input type="text" name="title" id="title" onChange={handleChange} />
-        <label>
+
+        <label htmlFor="category">
           Choose a category:
           <select name="category" id="category" onChange={handleChange}>
             {categories.map((cat) => (
@@ -45,8 +45,12 @@ const BooksForm = () => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => ({
-  createBook: () => { dispatch(createBook); },
-});
+const mapDispatchToProps = {
+  createBook,
+};
 
-export default connect(mapDispatchToProps)(BooksForm);
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+export default connect(undefined, mapDispatchToProps)(BooksForm);
