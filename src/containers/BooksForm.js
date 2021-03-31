@@ -26,7 +26,7 @@ const BooksForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form>
         <label htmlFor="title">
           Title:
         </label>
@@ -39,7 +39,7 @@ const BooksForm = () => {
             ))}
           </select>
         </label>
-        <input type="submit" name="submit" value="Submit" />
+        <button type="submit" name="submit" onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );
