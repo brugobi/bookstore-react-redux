@@ -5,8 +5,6 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import booksReducer from './redux/reducers/books';
 
-// const id = Math.floor(Math.random() * 1000);
-
 const initialstate = {
   books: [
     {
