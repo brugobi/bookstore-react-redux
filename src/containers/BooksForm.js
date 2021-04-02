@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { createBook } from '../redux/actions/index';
 
 const BooksForm = ({ createBook }) => {
-  const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
@@ -34,7 +34,7 @@ const BooksForm = ({ createBook }) => {
         <label htmlFor="category">
           Choose a category:
           <select name="category" id="category" onChange={handleChange}>
-            <option value="none">--</option>
+            <option value="none"> -- </option>
             {categories.map((cat) => (
               <option key={cat} value={cat}>{cat}</option>
             ))}

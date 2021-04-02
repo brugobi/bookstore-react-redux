@@ -1,23 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CategoryFilter = ({ filter, clickHandler }) => {
+const CategoryFilter = ({ handleFilter }) => {
   const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-  const filterHandle = (e) => {
-    if (e.target.id === 'All') {
-      clickHandler(categories.filter((category) => category !== 'All'));
-    } else {
-      clickHandler(e.target.value);
+  const filterByCat = (e) => {
+    const cat = e.target.value;
+    if (cat !== 'All') {
+      handleFilter(cat);
     }
   };
-
-  const filterValue = filter.length > 1 ? 'All' : filter[0];
 
   return (
     <div>
       Filter:
-      <select name="filter" id="filter" value={filterValue} onChange={filterHandle}>
+      <select name="filter" id="filter" onChange={filterByCat}>
         {categories.map((cat) => (
           <option key={cat} value={cat}>{cat}</option>
         ))}
@@ -27,8 +24,7 @@ const CategoryFilter = ({ filter, clickHandler }) => {
 };
 
 CategoryFilter.propTypes = {
-  clickHandler: PropTypes.func.isRequired,
-  filter: PropTypes.arrayOf(PropTypes.string).isRequired,
+  handleFilter: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;

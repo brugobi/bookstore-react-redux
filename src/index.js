@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
-import booksReducer from './redux/reducers/books';
+import rootReducer from './redux/reducers';
 
 const initialstate = {
   books: [
@@ -46,7 +46,7 @@ const initialstate = {
   ],
 };
 
-const store = createStore(booksReducer, initialstate);
+const store = createStore(rootReducer, initialstate);
 
 ReactDOM.render(
   <React.StrictMode>
