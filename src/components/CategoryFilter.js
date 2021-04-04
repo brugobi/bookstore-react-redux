@@ -6,9 +6,7 @@ const CategoryFilter = ({ handleFilter }) => {
 
   const filterByCat = (e) => {
     const cat = e.target.value;
-    if (cat !== 'All') {
-      handleFilter(cat);
-    }
+    handleFilter(cat);
   };
 
   return (

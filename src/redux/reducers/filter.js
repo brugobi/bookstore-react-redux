@@ -1,12 +1,9 @@
 import { CHANGE_FILTER } from '../actions/index';
 
-const filterReducer = (state = [], action) => {
+const filterReducer = (state = 'All', action) => {
   switch (action.type) {
-    case CHANGE_FILTER: return {
-      books: [
-        ...state.books.filter((book) => book.category === action.payload),
-      ],
-    };
+    case CHANGE_FILTER:
+      return action.payload;
       // return state.books.filter((book) => );
     default:
       return state;
