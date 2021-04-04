@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import rootReducer from './redux/reducers/index';
-// import booksReducer from './redux/reducers/books';
 
 const initialstate = {
   books: [

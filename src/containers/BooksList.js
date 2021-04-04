@@ -21,7 +21,6 @@ const BooksList = () => {
   };
 
   const handleFilterChange = (filter) => {
-    // const bookFilter = books.filter((book) => book === filter);
     dispatch(changeFilter(filter));
   };
 
