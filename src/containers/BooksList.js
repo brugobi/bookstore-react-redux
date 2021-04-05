@@ -1,17 +1,32 @@
-/* eslint-disable react/forbid-prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
-import { removeBook } from '../redux/actions/index';
+import { removeBook, changeFilter } from '../redux/actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, removeBook }) => {
+const BooksList = () => {
+  const books = useSelector((state) => state.books);
+  const filter = useSelector((state) => state.filter);
+  const dispatch = useDispatch();
+
   const handleRemoveBook = (book) => {
-    removeBook(book);
+    dispatch(removeBook(book));
+  };
+
+  const displayBooks = () => {
+    if (books && filter === 'All') {
+      return books;
+    }
+    return books.filter((book) => book.category === filter);
+  };
+
+  const handleFilterChange = (filter) => {
+    dispatch(changeFilter(filter));
   };
 
   return (
     <div>
+      <CategoryFilter handleFilter={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -22,7 +37,7 @@ const BooksList = ({ books, removeBook }) => {
           </tr>
         </thead>
         <tbody>
-          {books.map((book) => (
+          {displayBooks().map((book) => (
             <Book key={book.id} book={book} clickHandler={handleRemoveBook} />
           ))}
         </tbody>
@@ -32,17 +47,4 @@ const BooksList = ({ books, removeBook }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  books: state.books,
-});
-
-BooksList.propTypes = {
-  books: PropTypes.array.isRequired,
-  removeBook: PropTypes.func.isRequired,
-};
-
-const mapDispatch = {
-  removeBook,
-};
-
-export default connect(mapStateToProps, mapDispatch)(BooksList);
+export default BooksList;
