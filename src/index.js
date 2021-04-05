@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import booksReducer from './redux/reducers/books';
+import 'bulma/css/bulma.min.css';
 
 // const id = Math.floor(Math.random() * 1000);
 

@@ -2,3 +2,50 @@
   margin: 0;
   padding: 0;
 }
+
+.Bookstore-CMS {
+  width: 240px;
+  height: 37px;
+  margin: 6px 47px 2px 0;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: blue;
+}
+
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  margin: 18px 41px 11px 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.CATEGORIES {
+  width: 105px;
+  height: 16px;
+  margin: 18px 664px 11px 41px;
+  opacity: 0.5px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.Mask {
+  width: 17px;
+  height: 17px;
+  background-color: blue;
+}
