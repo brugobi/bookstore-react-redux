@@ -33,8 +33,8 @@ const BooksForm = ({ createBook }) => {
           <div className="column is-flex is-justify-content-space-around">
             <div className="control">
               <span className="select">
-                <select name="category" id="category" onChange={handleChange}>
-                  <option value="none btnCategory"> Category </option>
+                <select className="btnCategory" name="category" id="category" onChange={handleChange}>
+                  <option value="none"> Category </option>
                   {categories.map((cat) => (
                     <option key={cat} value={cat}>{cat}</option>
                   ))}

@@ -27,22 +27,23 @@ const BooksList = () => {
   return (
     <div>
       <CategoryFilter handleFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>title</th>
-            <th>category</th>
-            <th>Remove Books</th>
-          </tr>
-        </thead>
-        <tbody>
-          {displayBooks().map((book) => (
-            <Book key={book.id} book={book} clickHandler={handleRemoveBook} />
-          ))}
-        </tbody>
-
-      </table>
+      <div className="columns">
+        <div className="column is-6">
+          <div>
+            <tbody>
+              {displayBooks().map((book) => (
+                <Book key={book.id} book={book} clickHandler={handleRemoveBook} />
+              ))}
+            </tbody>
+          </div>
+        </div>
+        <div className="column">
+          more content
+        </div>
+        <div className="column">
+          more stuffs
+        </div>
+      </div>
     </div>
   );
 };
