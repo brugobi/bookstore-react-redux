@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NavBar = () => (
-  <nav className="navbar navbar-custom" role="navigation" aria-label="main navigation">
+  <nav className="navbar navbar-custom box" role="navigation" aria-label="main navigation">
 
     <div className="navbar-brand">
       <div className="navbar-item">

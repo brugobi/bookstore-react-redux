@@ -5,9 +5,9 @@ import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
 
 const App = () => (
-  <div className="container">
+  <div className="wrapper">
     <NavBar />
-    <div className="container">
+    <div className="container is-fluid">
       <BooksList />
       <BooksForm />
     </div>

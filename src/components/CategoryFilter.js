@@ -10,13 +10,19 @@ const CategoryFilter = ({ handleFilter }) => {
   };
 
   return (
-    <div>
-      Filter:
-      <select name="filter" id="filter" onChange={filterByCat}>
-        {categories.map((cat) => (
-          <option key={cat} value={cat}>{cat}</option>
-        ))}
-      </select>
+    <div className="field has-addons">
+      <div className="control">
+        <div className="button">Filter by Category</div>
+      </div>
+      <p className="control is-expanded">
+        <span className="select is-fullwidth">
+          <select name="filter" id="filter" onChange={filterByCat}>
+            {categories.map((cat) => (
+              <option key={cat} value={cat}>{cat}</option>
+            ))}
+          </select>
+        </span>
+      </p>
     </div>
   );
 };

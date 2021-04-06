@@ -15,8 +15,7 @@ const initialstate = {
     },
     {
       id: Math.floor(Math.random() * 50),
-      title: `Hidden Figures - The American Dream and the Untold Story of the Black 
-            Women Mathematicians Who Helped Win the Space Race`,
+      title: 'Hidden Figures',
       category: 'Biography',
     },
     {
@@ -36,7 +35,7 @@ const initialstate = {
     },
     {
       id: Math.floor(Math.random() * 500),
-      title: 'City of Stars: A New Yorkers Guide to the Cosmos',
+      title: 'City of Stars',
       category: 'Learning',
     },
     {

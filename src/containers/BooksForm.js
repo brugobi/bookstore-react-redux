@@ -26,21 +26,25 @@ const BooksForm = ({ createBook }) => {
   return (
     <div>
       <form>
-        <label htmlFor="title">
-          Title:
-          <input type="text" name="title" id="title" value={title} onChange={handleChange} />
-        </label>
+        <div className="field is-grouped">
+          <p className="control is-expanded">
+            <input className="input" type="text" name="title" id="title" placeholder="Book Title" value={title} onChange={handleChange} />
+          </p>
 
-        <label htmlFor="category">
-          Choose a category:
-          <select name="category" id="category" onChange={handleChange}>
-            <option value="none"> -- </option>
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
-            ))}
-          </select>
-        </label>
-        <button type="submit" name="submit" onClick={handleSubmit}>Submit</button>
+          <p className="control">
+            <span className="select is-expanded">
+              <select name="category" id="category" onChange={handleChange}>
+                <option value="none"> Category </option>
+                {categories.map((cat) => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+            </span>
+          </p>
+          <p className="control">
+            <button className="button" type="submit" name="submit" onClick={handleSubmit}>Submit</button>
+          </p>
+        </div>
       </form>
     </div>
   );
