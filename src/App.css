@@ -39,3 +39,11 @@
   height: 17px;
   background-color: blue;
 }
+
+.btnSubmit {
+  width: 143px;
+}
+
+.btnCategory {
+  width: 285px;
+}

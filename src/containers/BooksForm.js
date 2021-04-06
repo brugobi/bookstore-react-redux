@@ -26,24 +26,25 @@ const BooksForm = ({ createBook }) => {
   return (
     <div>
       <form>
-        <div className="field is-grouped">
-          <p className="control is-expanded">
+        <div className="field is-grouped columns">
+          <div className="control column is-7">
             <input className="input" type="text" name="title" id="title" placeholder="Book Title" value={title} onChange={handleChange} />
-          </p>
-
-          <p className="control">
-            <span className="select is-expanded">
-              <select name="category" id="category" onChange={handleChange}>
-                <option value="none"> Category </option>
-                {categories.map((cat) => (
-                  <option key={cat} value={cat}>{cat}</option>
-                ))}
-              </select>
-            </span>
-          </p>
-          <p className="control">
-            <button className="button" type="submit" name="submit" onClick={handleSubmit}>Submit</button>
-          </p>
+          </div>
+          <div className="column is-flex is-justify-content-space-around">
+            <div className="control">
+              <span className="select">
+                <select name="category" id="category" onChange={handleChange}>
+                  <option value="none btnCategory"> Category </option>
+                  {categories.map((cat) => (
+                    <option key={cat} value={cat}>{cat}</option>
+                  ))}
+                </select>
+              </span>
+            </div>
+            <div className="control">
+              <button className="button is-info btnSubmit" type="submit" name="submit" onClick={handleSubmit}>Submit</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
