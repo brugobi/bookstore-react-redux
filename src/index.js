@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import rootReducer from './redux/reducers/index';
+import 'bulma/css/bulma.min.css';
 
 const initialstate = {
   books: [
