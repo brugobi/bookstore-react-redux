@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserCircle } from 'react-icons/fa';
 
 const NavBar = () => (
   <nav className="navbar navbar-custom box" role="navigation" aria-label="main navigation">
@@ -15,7 +16,7 @@ const NavBar = () => (
     </div>
 
     <div className="navbar-end">
-      <i className="fas fa-user-circle" />
+      <FaUserCircle />
     </div>
   </nav>
 );

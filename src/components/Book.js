@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ImSpinner2 } from 'react-icons/im';
 
 const Book = ({ book, clickHandler }) => (
   <>
@@ -16,13 +17,21 @@ const Book = ({ book, clickHandler }) => (
       </div>
     </div>
     <div className="column is-3">
-      here
+      <div className="columns">
+        <div className="column">
+          <ImSpinner2 />
+        </div>
+        <div className="column">
+          <p className="Percent-Complete">64%</p>
+          <p className="Completed">Completed</p>
+        </div>
+      </div>
     </div>
     <div className="column is-3">
       <p className="Current-Chapter">CURRENT CHAPTER</p>
       <p className="Current-Lesson">Chapter 17</p>
       <p>
-        <button className="button is-info" type="button" onClick={() => clickHandler(book)}>Remove Book</button>
+        <button className="button btnRemove is-info" type="button" onClick={() => clickHandler(book)}>Remove Book</button>
       </p>
     </div>
   </>
