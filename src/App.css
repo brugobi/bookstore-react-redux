@@ -5,7 +5,6 @@
 
 .wrapper {
   background-color: #fafafa;
-  padding-bottom: 100px;
 }
 
 .navbar-custom {
@@ -14,22 +13,22 @@
 }
 
 .Bookstore-CMS {
-  font-family: Montserrat;
+  font-family: "Montserrat", serif;
   font-size: 30px;
   font-weight: bold;
   color: #0290ff;
 }
 
 .BOOKS {
-  font-family: Montserrat;
+  font-family: "Montserrat", serif;
   font-size: 13px;
   letter-spacing: 1.9px;
   color: gray;
 }
 
 .CATEGORIES {
-  opacity: 0.5px;
-  font-family: Montserrat;
+  opacity: 0.5;
+  font-family: "Montserrat", serif;
   font-size: 13px;
   letter-spacing: 1.9px;
   color: gray;
@@ -50,20 +49,20 @@
 }
 
 .title {
-  font-family: RobotoSlab;
+  font-family: "RobotoSlab", sans-serif;
   font-size: 22px;
 }
 
 .School-of {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: gray;
 }
 
 .Comments {
-  font-family: RobotoSlab;
+  font-family: "RobotoSlab", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
@@ -79,8 +78,8 @@
 
 .add-book {
   margin: 29px 524px 19px 0;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: #888888;
+  color: #888;
 }
