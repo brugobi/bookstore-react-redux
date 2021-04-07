@@ -15,7 +15,7 @@ const NavBar = () => (
     </div>
 
     <div className="navbar-end">
-      <div className="navbar-item">ICON</div>
+      <i className="fas fa-user-circle" />
     </div>
   </nav>
 );

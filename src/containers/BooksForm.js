@@ -26,7 +26,8 @@ const BooksForm = ({ createBook }) => {
   return (
     <div>
       <form>
-        <div className="field is-grouped columns">
+        <div className="add-book">Add New Book</div>
+        <div className="field is-grouped columns mb-4">
           <div className="control column is-7">
             <input className="input" type="text" name="title" id="title" placeholder="Book Title" value={title} onChange={handleChange} />
           </div>

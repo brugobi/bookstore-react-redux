@@ -27,22 +27,12 @@ const BooksList = () => {
   return (
     <div>
       <CategoryFilter handleFilter={handleFilterChange} />
-      <div className="columns">
-        <div className="column is-6">
-          <div>
-            <tbody>
-              {displayBooks().map((book) => (
-                <Book key={book.id} book={book} clickHandler={handleRemoveBook} />
-              ))}
-            </tbody>
+      <div>
+        {displayBooks().map((book) => (
+          <div key={book.id} className="columns column-wrapper">
+            <Book book={book} clickHandler={handleRemoveBook} />
           </div>
-        </div>
-        <div className="column">
-          more content
-        </div>
-        <div className="column">
-          more stuffs
-        </div>
+        ))}
       </div>
     </div>
   );
