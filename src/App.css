@@ -83,3 +83,19 @@
   font-weight: bold;
   color: #888;
 }
+
+.Current-Chapter {
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  color: #121212;
+}
+
+.Current-Lesson {
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
