@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconContext } from 'react-icons';
 import PropTypes from 'prop-types';
-import { ImSpinner2 } from 'react-icons/im';
+import { ImSpinner8 } from 'react-icons/im';
 
 const Book = ({ book, clickHandler }) => (
   <>
@@ -18,13 +19,18 @@ const Book = ({ book, clickHandler }) => (
     </div>
     <div className="column is-3">
       <div className="columns">
-        <div className="column">
-          <ImSpinner2 />
+        <div className="column is-flex">
+          <div>
+            <IconContext.Provider value={{ size: '70px', color: '#379cf6' }}>
+              <ImSpinner8 />
+            </IconContext.Provider>
+          </div>
+          <div>
+            <p className="Percent-Complete">64%</p>
+            <p className="Completed">Completed</p>
+          </div>
         </div>
-        <div className="column">
-          <p className="Percent-Complete">64%</p>
-          <p className="Completed">Completed</p>
-        </div>
+
       </div>
     </div>
     <div className="column is-3">

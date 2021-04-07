@@ -12,7 +12,7 @@ const CategoryFilter = ({ handleFilter }) => {
   return (
     <div className="field has-addons">
       <div className="control">
-        <div className="button">Filter by Category</div>
+        <div className="button">Filter :</div>
       </div>
       <p className="control is-expanded">
         <span className="select is-fullwidth">

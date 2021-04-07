@@ -5,6 +5,7 @@
 
 .wrapper {
   background-color: #fafafa;
+  font-family: "Montserrat", serif;
 }
 
 .navbar-custom {
@@ -13,14 +14,12 @@
 }
 
 .Bookstore-CMS {
-  font-family: "Montserrat", serif;
   font-size: 30px;
   font-weight: bold;
   color: #0290ff;
 }
 
 .BOOKS {
-  font-family: "Montserrat", serif;
   font-size: 13px;
   letter-spacing: 1.9px;
   color: gray;
@@ -28,7 +27,6 @@
 
 .CATEGORIES {
   opacity: 0.5;
-  font-family: "Montserrat", serif;
   font-size: 13px;
   letter-spacing: 1.9px;
   color: gray;
@@ -49,20 +47,17 @@
 }
 
 .title {
-  font-family: "RobotoSlab", sans-serif;
   font-size: 22px;
 }
 
 .School-of {
   opacity: 0.5;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: gray;
 }
 
 .Comments {
-  font-family: "RobotoSlab", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
@@ -78,7 +73,6 @@
 
 .add-book {
   margin: 29px 524px 19px 0;
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #888;
@@ -86,17 +80,14 @@
 
 .Current-Chapter {
   opacity: 0.5;
-  font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
   color: #121212;
 }
 
 .Current-Lesson {
-  font-family: RobotoSlab;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: -0.4px;
   color: #121212;
 }
 
@@ -104,9 +95,7 @@
   width: 68px;
   height: 39px;
   margin: 1px 92px 0 11px;
-  font-family: Montserrat;
   font-size: 32px;
-  color: var(--black-two);
 }
 
 .Completed {
@@ -114,11 +103,16 @@
   height: 18px;
   margin: 7px 79px 12px 12px;
   opacity: 0.5;
-  font-family: Montserrat;
   font-size: 14px;
-  color: var(--black-two);
 }
 
 .btnRemove {
   margin-top: 30px !important;
+}
+
+.Comments,
+.Current-Chapter,
+.Current-Lesson,
+.title {
+  font-family: "RobotoSlab", sans-serif;
 }

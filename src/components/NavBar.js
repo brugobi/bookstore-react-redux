@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconContext } from 'react-icons';
 import { FaUserCircle } from 'react-icons/fa';
 
 const NavBar = () => (
@@ -16,7 +17,9 @@ const NavBar = () => (
     </div>
 
     <div className="navbar-end">
-      <FaUserCircle />
+      <IconContext.Provider value={{ size: '30px', color: '#379cf6' }}>
+        <FaUserCircle />
+      </IconContext.Provider>
     </div>
   </nav>
 );
