@@ -3,7 +3,6 @@
 > React Project where I develop a Desktop Book Store using Class Components, Prop-Types and deployment to heroku.
 
 ![home](./src/images/home.png)
-![filter](./src/images/filter.png)
 
 ## Built With
 
