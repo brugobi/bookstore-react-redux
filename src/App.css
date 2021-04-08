@@ -6,6 +6,7 @@
 .wrapper {
   background-color: #fafafa;
   font-family: "Montserrat", serif;
+  padding-bottom: 3em;
 }
 
 .navbar-custom {
@@ -106,7 +107,7 @@
   font-size: 14px;
 }
 
-.btnRemove {
+.btnProg {
   margin-top: 30px !important;
 }
 
@@ -115,4 +116,18 @@
 .Current-Lesson,
 .title {
   font-family: "RobotoSlab", sans-serif;
+}
+
+.remove-btn {
+  border: none;
+  background-color: white;
+  padding: 0 5px;
+  color: #4386bf;
+  cursor: pointer;
+}
+
+.remove-btn:hover,
+.Comments:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

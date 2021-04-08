@@ -7,10 +7,16 @@ const Book = ({ book, clickHandler }) => (
   <>
     <div className="column is-6">
       <div className="School-of">{book.category}</div>
-      <div className="title">{book.title}</div>
+      <div className="title">
+        {book.title}
+      </div>
+
       <div>
         <span className="Comments">
           Comments |
+        </span>
+        <span className="Comments">
+          <input className="remove-btn" type="submit" value="Remove Book" onClick={() => clickHandler(book)} />
         </span>
         <span className="Comments">
           | Edit
@@ -37,7 +43,7 @@ const Book = ({ book, clickHandler }) => (
       <p className="Current-Chapter">CURRENT CHAPTER</p>
       <p className="Current-Lesson">Chapter 17</p>
       <p>
-        <button className="button btnRemove is-info" type="button" onClick={() => clickHandler(book)}>Remove Book</button>
+        <button className="button btnProg is-info" type="button">UPDATE PROGRESS</button>
       </p>
     </div>
   </>
