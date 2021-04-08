@@ -26,21 +26,27 @@ const BooksForm = ({ createBook }) => {
   return (
     <div>
       <form>
-        <label htmlFor="title">
-          Title:
-          <input type="text" name="title" id="title" value={title} onChange={handleChange} />
-        </label>
-
-        <label htmlFor="category">
-          Choose a category:
-          <select name="category" id="category" onChange={handleChange}>
-            <option value="none"> -- </option>
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
-            ))}
-          </select>
-        </label>
-        <button type="submit" name="submit" onClick={handleSubmit}>Submit</button>
+        <div className="add-book">Add New Book</div>
+        <div className="field is-grouped columns mb-4">
+          <div className="control column is-7">
+            <input className="input" type="text" name="title" id="title" placeholder="Book Title" value={title} onChange={handleChange} />
+          </div>
+          <div className="column is-flex is-justify-content-space-around">
+            <div className="control">
+              <span className="select">
+                <select className="btnCategory" name="category" id="category" onChange={handleChange}>
+                  <option value="none"> Category </option>
+                  {categories.map((cat) => (
+                    <option key={cat} value={cat}>{cat}</option>
+                  ))}
+                </select>
+              </span>
+            </div>
+            <div className="control">
+              <button className="button is-info btnSubmit" type="submit" name="submit" onClick={handleSubmit}>Submit</button>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   );

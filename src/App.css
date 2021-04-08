@@ -2,3 +2,132 @@
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  background-color: #fafafa;
+  font-family: "Montserrat", serif;
+  padding-bottom: 3em;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  padding: 23px 100px 27px 100px;
+}
+
+.Bookstore-CMS {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.BOOKS {
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.CATEGORIES {
+  opacity: 0.5;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.Mask {
+  width: 17px;
+  height: 17px;
+  background-color: blue;
+}
+
+.btnSubmit {
+  width: 143px;
+}
+
+.btnCategory {
+  width: 285px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.School-of {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+
+.Comments {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.column-wrapper {
+  height: 170px;
+  padding: 20px;
+  background-color: white;
+  margin: 40px 5px !important;
+  border: solid 1px #e8e8e8;
+}
+
+.add-book {
+  margin: 29px 524px 19px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #888;
+}
+
+.Current-Chapter {
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+  color: #121212;
+}
+
+.Current-Lesson {
+  font-size: 16px;
+  font-weight: 300;
+  color: #121212;
+}
+
+.Percent-Complete {
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-size: 32px;
+}
+
+.Completed {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.btnProg {
+  margin-top: 30px !important;
+}
+
+.Comments,
+.Current-Chapter,
+.Current-Lesson,
+.title {
+  font-family: "RobotoSlab", sans-serif;
+}
+
+.remove-btn {
+  border: none;
+  background-color: white;
+  padding: 0 5px;
+  color: #4386bf;
+  cursor: pointer;
+}
+
+.remove-btn:hover,
+.Comments:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

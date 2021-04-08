@@ -1,13 +1,8 @@
 # Book Store
  
-> React Project where I develop a Book Store using Class Components, Prop-Types and deployment to heroku.
+> React Project where I develop a Desktop Book Store using Class Components, Prop-Types and deployment to heroku.
 
-<!-- ![home_page](./assets/images/home.png)
-
-![home_page](./assets/images/projects.png)
-
-![home_page](./assets/images/about.png) -->
-
+![home](./src/images/home.png)
 
 ## Built With
 
@@ -17,6 +12,7 @@
 - heroku
 - Node.js
 - prop-types
+- Bulma
 
 ## Live Version
 
